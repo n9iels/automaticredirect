@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="upgrade">
+	<name>plg_content_automaticredirect</name>
+	<author>Niels van der Veer</author>
+	<creationDate>September 2018</creationDate>
+	<copyright>Copyright (C) 2018 Niels van der Veer. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>n.i.dveer@gmail.com</authorEmail>
+	<authorUrl>nielsvanderveer.nl</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_AUTOMATICREDIRECT_XML_DESCRIPTION</description>
+	<files>
+		<folder>language</folder>
+		<filename plugin="automaticredirect">automaticredirect.php</filename>
+	</files>
+	<languages>
+		<language tag="nl-NL">language/nl-NL/nl-NL.plg_content_automaticredirect.ini</language>
+		<language tag="nl-NL">language/nl-NL/nl-NL.plg_content_automaticredirect.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="title-tag"
+					type="list"
+					default=""
+					label="PLG_AUTOMATICREDIRECT_TITLETAG"
+					description="PLG_AUTOMATICREDIRECT_TITLETAG_DESC"
+				>
+					<option value="">PLG_AUTOMATICREDIRECT_TITLETAG_NONE</option>
+					<option value="h1">PLG_AUTOMATICREDIRECT_TITLETAG_H1</option>
+					<option value="h2">PLG_AUTOMATICREDIRECT_TITLETAG_H2</option>
+					<option value="h3">PLG_AUTOMATICREDIRECT_TITLETAG_H3</option>
+					<option value="h4">PLG_AUTOMATICREDIRECT_TITLETAG_H4</option>
+					<option value="h5">PLG_AUTOMATICREDIRECT_TITLETAG_H5</option>
+					<option value="h6">PLG_AUTOMATICREDIRECT_TITLETAG_H6</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
